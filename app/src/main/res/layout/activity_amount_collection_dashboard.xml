@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".ui.activities.AmountCollectionDashboardActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/numberText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@android:color/transparent"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/numberId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/numberText" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/routeText"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:text="@string/title_route_short"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/barrier1"
+        app:layout_constraintEnd_toStartOf="@+id/routeIcon"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/numberId" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/routeIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@android:color/transparent"
+        android:minWidth="40dp"
+        android:minHeight="40dp"
+        android:padding="5dp"
+        app:layout_constraintBottom_toTopOf="@id/barrier1"
+        app:layout_constraintEnd_toStartOf="@+id/routeValue"
+        app:layout_constraintStart_toEndOf="@+id/routeText"
+        app:layout_constraintTop_toBottomOf="@id/numberId" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/routeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/barrier1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/routeIcon"
+        app:layout_constraintTop_toBottomOf="@id/numberId" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="routeText,routeIcon,routeValue" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/dropCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/barrier1" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/dateId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:text="@string/title_route_short"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/dateTimeStamp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dropCount" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/dateTimeStamp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@android:color/transparent"
+        android:minWidth="40dp"
+        android:minHeight="40dp"
+        android:padding="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/routeValue"
+        app:layout_constraintStart_toEndOf="@+id/dateId"
+        app:layout_constraintTop_toBottomOf="@id/dropCount" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sync"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@drawable/border_white_corner"
+        android:minHeight="40dp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toEndOf="@+id/dateTimeStamp"
+        app:layout_constraintTop_toBottomOf="@id/dropCount" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="dateId,dateTimeStamp,sync" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#f9f9f9"
+        android:padding="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/collectedAmountTV"
+        app:layout_constraintTop_toBottomOf="@+id/barrier2" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/collectedAmountTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/pendingAmountTV" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/pendingAmountTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TripSheet</string>
+    <string name="action_login">Login</string>
+    <string name="title_login_header">TRUCK/ROUTE NUMBER</string>
+
+    <string name="action_get_trip_sheet">Get Trip Sheet</string>
+    <string name="title_truck_number">Truck Number</string>
+    <string name="title_route_number">Route Number</string>
+    <string name="title_route_short">Route</string>
+    <string name="title_drop_count">%1$s Drops</string>
+    <string name="collected_amount">Total Amount Collection = %1$s</string>
+    <string name="pending_amount">Total Amount Pending = %1$s</string>
+</resources>
