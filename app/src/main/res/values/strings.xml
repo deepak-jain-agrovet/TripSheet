@@ -10,4 +10,20 @@
     <string name="title_drop_count">%1$s Drops</string>
     <string name="collected_amount">Total Amount Collection = %1$s</string>
     <string name="pending_amount">Total Amount Pending = %1$s</string>
+
+    <string-array name="route_headers">
+        <item>Delivery</item>
+        <item>Collection</item>
+    </string-array>
+
+    <string name="title_order_detail">Order Detail</string>
+    <string name="action_save">Save</string>
+    <string name="title_amount_collection">Amount Collection</string>
+    <string name="action_amount_collected">Amount Collected</string>
+    <string name="title_amount_paid">Amount Paid</string>
+    <string name="hint_amount_paid">00</string>
+    <string name="title_payment_mode">Payment Mode</string>
+    <string name="title_cash">Cash</string>
+    <string name="title_cheque">Cheque</string>
+
 </resources>

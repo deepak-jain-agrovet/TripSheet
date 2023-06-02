@@ -8,10 +8,11 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="colorVariant">#ef3535</color>
+    <color name="colorVariant">#E12E2E</color>
     <color name="text_color">#feefee</color>
     <color name="incomplete_checked">#ef2f2f</color>
     <color name="complete_checked">#6fb793</color>
+    <color name="list_background">#fafafa</color>
 
 
 </resources>
